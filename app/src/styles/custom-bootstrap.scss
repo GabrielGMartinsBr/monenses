@@ -1,0 +1,14 @@
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+$theme-colors: ("orange": #f92);
+
+@import "bootstrap";
+
+.btn-orange {
+    @include button-variant(#f92, #f92, #f92, #f92);
+    color: #fff;
+    &:hover, &:focus {
+        color: #fff;
+    }
+}
