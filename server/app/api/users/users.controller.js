@@ -1,5 +1,7 @@
-const { User } = require('../../models');
 const Sequelize = require('sequelize')
+const bcrypt = require('bcrypt');
+
+const { User } = require('../../models');
 
 const { AppRequestError } = require("../../base/errors");
 
@@ -18,8 +20,10 @@ async function create(data) {
 
     const { firstName, lastName, email, username, password } = data;
 
+    const passwordHash = bcrypt.hashSync(password, 10);
+
     try {
-        const res = await User.create({ firstName, lastName, email, username, password });
+        const res = await User.create({ firstName, lastName, email, username, password: passwordHash });
         return res;
     } catch (ex) {
         if (ex instanceof Sequelize.UniqueConstraintError) {
