@@ -1,7 +1,7 @@
 <template>
   <div class="sign-in-view">
     <h3 class="form-title">Access account</h3>
-
+    <hr>
     <b-form novalidate>
       <b-form-group label="Email or username">
         <b-form-input type="text" />
