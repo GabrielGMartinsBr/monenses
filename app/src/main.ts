@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
+import '@/base/filters/base-filters'
+import '@/base/validations'
+
 import router from '@/router'
 import App from '@/App.vue'
 
