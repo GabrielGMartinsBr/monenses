@@ -1,9 +1,14 @@
 import { extend } from "vee-validate";
-import { email } from 'vee-validate/dist/rules';
+import { email, confirmed } from 'vee-validate/dist/rules';
 
 extend('email', {
   ...email,
   message: 'This is not a valid email.'
+})
+
+extend('confirmed', {
+  ...confirmed,
+  message: 'Passwords do not match.'
 })
 
 extend('req', {
