@@ -1,3 +1,12 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 
+@import './utils.scss';
+
+#bg {
+    position: fixed;
+    @include pos-n-dims(0, 0, 100vw, 100vh);
+    z-index: -1;
+    background: linear-gradient(-15deg, #936 15%, #639 90%) no-repeat;
+    user-select: none;
+}

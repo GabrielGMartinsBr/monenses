@@ -1,0 +1,13 @@
+@mixin pos-n-dims($x, $y, $width, $height) {
+    left: $x;
+    top: $y;
+    width: $width;
+    height: $height;
+}
+
+@mixin positions($x, $y, $x2, $y2) {
+    left: $x;
+    top: $y;
+    right: $x2;
+    bottom: $y2;
+}
