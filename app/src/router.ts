@@ -27,10 +27,12 @@ const routes: Array<RouteConfig> = [
     component: () => import('@/views/LoggedOutView.vue'),
     children: [
       {
+        name: 'SignInView',
         path: '/sign-in',
         component: () => import('@/views/sign/SignInView.vue'),
       },
       {
+        name: 'SignUpView',
         path: '/sign-up',
         component: () => import('@/views/sign/SignUpView.vue'),
       },
