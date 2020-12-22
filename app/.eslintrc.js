@@ -17,5 +17,14 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     'no-empty': 'off'
-  }
+  },
+  overrides: [
+    {
+      files: ['*.vue'],
+      rules: {
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+
+      }
+    }
+  ]
 }
