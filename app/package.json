@@ -2,6 +2,11 @@
   "name": "monenses-app",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Gabriel G Martins",
+    "email": "gabrielgmartinsbr@gmail.com",
+    "url": "https://gabrielmartins.dev"
+  },
   "scripts": {
     "dev": "vue-cli-service serve --open",
     "serve": "vue-cli-service serve",
